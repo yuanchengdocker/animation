@@ -1,0 +1,126 @@
+.page8
+    width: 100%
+    height: 100%
+    position: relative
+    .page8-container
+        width: 100%
+        height: 100%
+        top: -100%
+        position: absolute
+        .page8-air-container
+            width: 100%
+            height: 100%
+            position: absolute
+            .page8-airfly
+                top: 20%;
+                z-index: 4;
+                height: 25%;
+                width: 120%;
+                left: -120%
+                position: absolute
+            .page8-airfly-in
+                left: -60%
+                -webkit-animation:page8-airfly-in-go 1s;
+            .page8-airfly-out
+                left: 120%
+                -webkit-animation:page8-airfly-out-go 1s;
+            .page8-mountain
+                width: 200%
+                height: 100%
+                z-index: 3
+                position: absolute
+            .page8-mountain-move
+                left: -100%;
+                -webkit-animation:page8-mountain-move-go 1s; 
+        .page8-background
+            width: 100%
+            height: 100%
+            position: absolute
+        .page8-car-container
+            width: 100%
+            height: 100%
+            left: -100%
+            position: absolute
+            .page8-car
+                width: 33%
+                left: 51%
+                bottom: 0
+                z-index: 6
+                position: absolute
+            .page8-car-move 
+                bottom: 15%;
+                width: 12%;
+                -webkit-animation:page8-car-move-go 1s;
+            .page8-gonglu
+                width: 100%
+                bottom: 0
+                z-index: 5
+                position: absolute
+        .page8-car-container-in
+            left: 0%
+            -webkit-animation:page8-car-container-in-go 1s; 
+    .page8-container-in
+        top: 0
+        -webkit-animation:page8-container-in-go 1s;
+    .page8-container-out
+        top: -100%
+        -webkit-animation:page8-container-out-go 1s;
+@-webkit-keyframes page8-car-move-go{
+    0%{
+        width: 33%
+        bottom: 0
+    }
+    100%{
+        bottom: 15%;
+        width: 12%;
+    }
+}
+@-webkit-keyframes page8-mountain-move-go{
+    0%{
+        left: 0%
+    }
+    100%{
+        left: -100%;
+    }
+}
+@-webkit-keyframes page8-airfly-in-go{
+    0%{
+        left: -120%
+    }
+    100%{
+        left: -60%
+    }
+}
+@-webkit-keyframes page8-airfly-out-go{
+    0%{
+        left: -60%
+    }
+    100%{
+        left: 120%
+    }
+}
+@-webkit-keyframes page8-car-container-in-go{
+    0%{
+        left: -100%
+    }
+    100%{
+        left: 0%
+    }
+}
+
+@-webkit-keyframes page8-container-in-go{
+    0%{
+        top:-100%
+    }
+    100%{
+        top: 0
+    }
+}
+@-webkit-keyframes page8-container-out-go{
+    0%{
+        top:0%
+    }
+    100%{
+        top: -100%
+    }
+}

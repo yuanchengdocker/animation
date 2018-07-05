@@ -1,0 +1,161 @@
+.page11
+    width: 100%
+    height: 100%
+    position: relative
+    .page11-container
+        width: 100%
+        height: 100%
+        position: absolute
+        .page11-background
+            width: 100%
+            height: 100%
+            position: absolute
+        .page11-nolight
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+            opacity: 1;
+            position: absolute
+        .page11-nolight-out
+            opacity: 0;
+            -webkit-animation:page11-nolight-out-go 1s;
+        .page11-patient1
+            z-index: 20;
+            width: 57%
+            height: 61%
+            right: -70%
+            bottom: -0.5%;
+            position: absolute
+        .page11-patient1-in
+            right: 6%
+            -webkit-animation:page11-patient1-in-go 1s;
+        .page11-patient2
+            z-index: 20;
+            width: 32%
+            height: 61%
+            right: 0%
+            bottom: -0.5%;
+            position: absolute
+        .page11-room
+            width: 100%
+            height: 100%
+            position: absolute
+        .page11-tv-off
+            z-index: 10
+            width: 66%;
+            top: 13.5%;
+            height: 40.5%;
+            position: absolute
+        .page11-tv-on
+            z-index: 11
+            width: 66%;
+            top: 13.5%;
+            height: 40.5%;
+            opacity: 0
+            position: absolute
+        .page11-tv-on-in
+            opacity: 1
+            -webkit-animation:page11-tv-on-in-go 1s;
+        .page11-tv-screen1
+            z-index: 12
+            width: 66%;
+            top: 13.5%;
+            height: 40.5%;
+            opacity: 0
+            position: absolute
+        .page11-tv-screen1-in
+            opacity: 1
+            -webkit-animation:page11-tv-screen1-in-go 1s;
+        .page11-tv-screen2
+            z-index: 12
+            width: 66%;
+            top: 13.5%;
+            height: 40.5%;
+            position: absolute
+        .page11-vr-line
+            z-index: 19;
+            width: 40%;
+            height: 28%;
+            top: 46%;
+            left: 35%;
+            opacity: 0
+            position: absolute
+        .page11-vr-line-in
+            opacity: 1
+            -webkit-animation:page11-tv-line-in-go 1s;
+        .page11-vr-watch
+            z-index: 21;
+            width: 22%;
+            height: 7%;
+            right: 8%;
+            top: 40%;
+            opacity: 0
+            position: absolute
+        .page11-vr-watch-in
+            opacity: 1
+            -webkit-animation:page11-tv-watch-in-go 1s;
+        .page11-title
+            z-index: 22
+            width: 76%
+            left: 12%
+            bottom: 7%
+            position: absolute
+    .page11-container-out
+        opacity: 0
+        -webkit-animation:page11-container-out-go 1s;
+@-webkit-keyframes page11-container-out-go {
+    0%{
+       opacity: 1
+    }
+    100%{
+        opacity: 0
+    }
+}
+@-webkit-keyframes page11-patient1-in-go {
+    0%{
+       right: -70%
+    }
+    100%{
+        right: 6%
+    }
+}
+@-webkit-keyframes page11-tv-line-in-go {
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+@-webkit-keyframes page11-tv-watch-in-go {
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+@-webkit-keyframes page11-tv-screen1-in-go {
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+@-webkit-keyframes page11-nolight-out-go {
+    0%{
+       opacity: 1
+    }
+    100%{
+        opacity: 0
+    }
+}
+@-webkit-keyframes page11-tv-on-in-go {
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}

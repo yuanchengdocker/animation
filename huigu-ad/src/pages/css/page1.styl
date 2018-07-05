@@ -1,0 +1,125 @@
+.page1
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #70dcff;
+    .page1-car
+        z-index: 3;
+        width: 22%;
+        height: 10%;
+        left: -7%
+        bottom: 14%
+        position: absolute;
+        -webkit-animation:car-go 5s infinite linear ;
+    .page1-hospital
+        height: 68%
+        width: 100%
+        position: absolute
+        bottom: 0
+        z-index: 2
+    .page1-logo
+        z-index: 2;
+        width: 36%;
+        left: 32%;
+        top: 8%;
+        position: absolute
+    .page1-huiguTitle
+        width: 70%;
+        left: 15%;
+        top: 18%;
+        position: absolute
+    .page1-serviceIntroduce
+        width: 70%;
+        left: 15%;
+        top: 25%;
+        position: absolute
+    .page1-start
+        z-index: 4;
+        width: 40%;
+        bottom: 7%
+        left: 50%
+        margin-left: -20%
+        position: absolute
+    .page1-start-float
+        -webkit-animation:page1-start-float-go .8s infinite linear ;
+    .page1-start:active
+        width: 38%;
+        margin-left: -19%
+    .page1-tree
+        z-index: 5;
+        width: 30%
+        left: -20px
+        bottom: -20px
+        position: absolute
+    .page1-yun1
+        width: 30%;
+        top: 2%;
+        left: -10%;
+        opacity: 0.3;
+        position: absolute
+    .page1-yun1-start
+        -webkit-animation:yun1-go 20s infinite linear ;
+    .page1-yun2
+        width: 30%;
+        top: -5%
+        right: -10%;
+        opacity: 0.2;
+        position: absolute
+    .page1-yun2-start
+        -webkit-animation:yun2-go 20s infinite linear ;
+    .page1-yun3
+        width: 20%;
+        opacity: 0.3;
+        left: 6%
+        top: 32%
+        position: absolute
+    .page1-yun3-start
+        -webkit-animation:yun3-go 20s infinite linear ;
+    .page1-yun4
+        width: 20%;
+        opacity: 0.2;
+        right: 3%
+        top: 41%
+        position: absolute
+    .page1-yun4-start
+        -webkit-animation:yun4-go 20s infinite linear ;
+@-webkit-keyframes yun1-go {
+    0%{left: -30%;}
+    100%{left: 150%;}
+}
+@-webkit-keyframes yun2-go {
+    0%{left: -30%;}
+    100%{left: 150%;}
+}
+@-webkit-keyframes yun3-go {
+    0%{left: -30%;}
+    100%{left: 150%;}
+}
+@-webkit-keyframes yun4-go {
+    0%{left: -30%;}
+    100%{left: 150%;}
+}
+@-webkit-keyframes car-go {
+    0%{
+        left: -7%;
+        bottom: 14%;
+    }
+    100%{
+        left: 55%;
+        bottom: -10%;
+    }
+}
+@-webkit-keyframes page1-start-float-go {
+    0%{
+        width: 40%;
+        bottom: 7%
+        left: 50%
+        margin-left: -20%
+    }
+    100%{
+        width: 40%;
+        bottom: 8%
+        left: 50%
+        margin-left: -20%
+    }
+}

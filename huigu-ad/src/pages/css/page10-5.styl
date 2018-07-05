@@ -1,0 +1,195 @@
+.page12
+    width: 100%
+    height: 100%
+    position: relative
+    .page12-service-list-container
+        width: 100%
+        height: 100%
+        position: absolute
+        .page12-circle
+            left: -5%;
+            width: 110%;
+            height: 61%;
+            bottom: -43%;
+            transform: rotate(220deg);
+            -webkit-transform: rotate(220deg);
+            -moz-transform: rotate(220deg);
+            -o-transform: rotate(220deg);
+            -ms-transform: rotate(220deg);
+            position: absolute
+        .page12-circle-in
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -webkit-animation:page12-circle-in-go 0.5s;
+        .page12-service-item
+            height: 45%;
+            width: 16%;
+            overflow: hidden
+            position: absolute
+            .page12-line
+                width: 20%;
+                right: 38%;
+                bottom: -8%;
+                position: absolute
+            .page12-line-in
+                bottom: 8%;
+                -webkit-animation:page12-line-in-go 0.5s;
+            .page12-service-icon
+                height: 22%;
+                width: 100%;
+                top: 55%;
+                opacity: 0
+                position: absolute
+            .page12-service-icon-in
+                top: 36%
+                opacity: 1
+                -webkit-animation:page12-service-icon-in-go 0.5s;
+            .page12-service-name
+                width: 0%;
+                height: 0%;
+                left: 76%;
+                top: 0;
+                position: absolute
+            .page12-service-name-in
+                width: 30%;
+                height: 26%;
+                left: 38%;
+                top: 0;
+                -webkit-animation:page12-service-name-in-go 0.5s;
+        .page12-service-item1
+            top: 43%;
+            right: 74%;
+            position: absolute
+        .page12-service-item2
+            top: 37%;
+            right: 42%;
+            position: absolute
+        .page12-service-item3
+            top: 43%;
+            right: 10%;
+            position: absolute
+    .page12-service-list-container-out
+        bottom: -100%
+        -webkit-animation:page12-service-list-container-out-go 1s;
+    .page12-service-title
+        z-index: 3
+        width: 28%;
+        left: 36%
+        top: -20%
+        position: absolute
+    .page12-service-title-in
+        top: 5%
+        -webkit-animation:page12-service-title-in-go 1s;  
+    .page12-service-title-out
+        top: -20%
+        -webkit-animation:page12-service-title-out-go 1s;  
+    .page12-title-back
+        z-index: 1
+        width: 68%
+        height: 18%
+        left: 17%
+        top: -18%
+        position: absolute
+    .page12-title-back-in
+        top: 0
+        -webkit-animation:page12-title-back-in-go 1s;  
+    .page12-title-back-out
+        top: -18%
+        -webkit-animation:page12-title-back-out-go 1s; 
+@-webkit-keyframes page12-service-list-container-out-go{
+    0%{
+        bottom: 0
+    }
+    100%{
+        bottom: -100%
+    }
+}
+@-webkit-keyframes page12-service-title-out-go{
+    0%{
+        top: 5%
+    }
+    100%{
+        top: -20%
+    }
+}
+@-webkit-keyframes page12-title-back-out-go{
+    0%{
+        top: 0
+    }
+    100%{
+        top: -18%
+    }
+}
+@-webkit-keyframes page12-service-title-in-go{
+    0%{
+        top: -20%
+    }
+    100%{
+        top: 5%
+    }
+}
+@-webkit-keyframes page12-title-back-in-go{
+    0%{
+        top: -18%
+    }
+    100%{
+        top: 0
+    }
+}
+@-webkit-keyframes page12-circle-in-go{
+    0%{
+        transform: rotate(220deg);
+        -webkit-transform: rotate(220deg);
+        -moz-transform: rotate(220deg);
+        -o-transform: rotate(220deg);
+        -ms-transform: rotate(220deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes page12-line-in-go{
+    0%{
+        bottom: -8%;
+    }
+    100%{
+        bottom: 8%;
+    }
+}
+@-webkit-keyframes page12-service-icon-in-go{
+    0%{
+        top: 55%;
+        opacity: 0
+    }
+    100%{
+        top: 36%;
+        opacity: 1
+    }
+}
+@-webkit-keyframes page12-service-name-in-go{
+    0%{
+        width: 0%
+        height: 0%;
+        top: 0%;
+        left: 78%;
+    }
+    50%{
+        width: 36%;
+        height: 30%;
+        left: 30%;
+        top: 0;
+    }
+    100%{
+        width: 30%;
+        height: 26%;
+        left: 38%;
+        top: 0;
+    }
+}

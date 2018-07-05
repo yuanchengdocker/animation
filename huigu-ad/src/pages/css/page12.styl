@@ -1,0 +1,107 @@
+.page14
+    width: 100%
+    height: 100%
+    position: relative
+    .page14-container
+        top: -100%
+        width: 100%
+        height: 100%
+        position: absolute
+        .page14-background
+            width: 100%
+            height: 100%
+            position: absolute
+        .page14-page-container
+            width: 80%;
+            height: 78%;
+            top: 12%;
+            left: 10%;
+            position: absolute
+            .page14-introduce
+                width: 100%
+                height: 100%
+                position: absolute
+            .page14-introduce-in
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                opacity: 1
+                -webkit-animation:page14-introduce-in-go 2s;
+            .page14-introduce-out
+                top: -120%
+                -webkit-animation:page14-introduce-out-go 1s;
+            .page14-qrcode
+                width: 100%
+                height: 100%
+                bottom: -120%
+                position: absolute
+            .page14-qrcode-in
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 100%
+                opacity: 1
+                -webkit-animation:page14-qrcode-in-go 2s;
+        .page14-arrow
+            position: absolute;
+            z-index: 20;
+            width: 14%;
+            bottom: -10%;
+            left: 40%;
+            opacity: 0.5;
+        .page14-arrow-float
+            -webkit-animation:page14-arrow-float-go .8s infinite linear ;
+    .page14-container-in
+        top: 0
+        -webkit-animation:page14-container-in-go 1s;
+@-webkit-keyframes page14-arrow-float-go {
+    0%{
+        bottom: -10%;
+    }
+    100%{
+        bottom: -6%;
+    }
+}
+@-webkit-keyframes page14-qrcode-in-go {
+    0%{
+        bottom: -120%
+        opacity: 0
+    }
+    100%{
+        bottom: 0
+        opacity: 1
+    }
+}
+@-webkit-keyframes page14-introduce-in-go {
+    0%{
+        top: -20%
+        left: -20%
+        width: 140%
+        height: 140%
+        opacity: 0
+    }
+    100%{
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 1
+    }
+}
+@-webkit-keyframes page14-introduce-out-go {
+    0%{
+        top: 0
+    }
+    100%{
+        top: -120%
+    }
+}
+@-webkit-keyframes page14-container-in-go {
+    0%{
+        top: -100%
+    }
+    100%{
+        top: 0
+    }
+}

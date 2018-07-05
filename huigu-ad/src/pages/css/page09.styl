@@ -1,0 +1,217 @@
+.page10
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .page10-background
+        width: 100%
+        height: 100%
+        opacity: 0
+        position: absolute
+    .page10-background-in
+        opacity: 1
+        -webkit-animation:page10-background-in-go 1s;
+    .page10-background-out
+        opacity: 0
+        -webkit-animation:page10-background-out-go 1s;
+    .page10-title
+        z-index: 20
+        width: 66%
+        left: 17%
+        bottom: 5%
+        position: absolute
+    .page10-left-hand-container
+        width: 100%
+        height: 100%
+        position: absolute
+        .page10-screen-container
+            z-index: 5
+            top: 15.5%;
+            left: 18%;
+            width: 60%;
+            height: 62%;
+            overflow: hidden
+            position: absolute
+            .page10-patient
+                z-index: 21;
+                width: 100%
+                height: 100%
+                opacity: 0
+                position: absolute
+            .page10-patient-in
+                opacity: 1
+                -webkit-animation:page10-patient-in-go 1s;
+            .page10-mouse1
+                z-index: 23;
+                top: 49%;
+                left: 43%;
+                width: 16%;
+                opacity: 0
+                position: absolute
+            .page10-mouse1-in
+                opacity: 1
+                -webkit-animation:page10-mouse1-in-go 1s;
+            .page10-mouse2
+                z-index: 23;
+                top: 49%;
+                left: 45%;
+                width: 12%;
+                height: 5%;
+                position: absolute
+            .page10-order
+                z-index: 23;
+                top: 50%
+                left: 50%
+                width: 0%
+                height: 0%
+                position: absolute
+            .page10-order-big-in
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                -webkit-animation:page10-order-big-in-go 1s;
+        .page10-left-hand
+            z-index: 2
+            width: 90%;
+            height: 95%;
+            top: 5%;
+            left: -6%;
+            position: absolute
+        .page10-left-hand-pointer
+            z-index: 6
+            width: 20%
+            height: 58%
+            top: 26%
+            left: 74%
+            position: absolute
+    .page10-dialog
+        width: 0
+        height: 0
+        left: 35%
+        top: 25%
+        z-index: 25
+        position: absolute
+    .page10-dialog-in
+        width: 30%;
+        height: 11%;
+        left: 5%;
+        top: 14%;
+        -webkit-animation:page10-dialog-in-go 1s;
+    .page10-left-hand-container-in
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        left: 0%;
+        bottom: 0%;
+        -webkit-animation:page10-left-hand-container-in 1s;
+    .page10-left-hand-container-out
+        transform: rotate(340deg);
+        -webkit-transform: rotate(340deg);
+        -moz-transform: rotate(340deg);
+        -o-transform: rotate(340deg);
+        -ms-transform: rotate(340deg);
+        left: -110%;
+        bottom: -20%;
+        -webkit-animation:page10-left-hand-container-out 1s;
+@-webkit-keyframes page10-left-hand-container-in {
+    0%{
+        transform: rotate(340deg);
+        -webkit-transform: rotate(340deg);
+        -moz-transform: rotate(340deg);
+        -o-transform: rotate(340deg);
+        -ms-transform: rotate(340deg);
+        left: -110%;
+        bottom: -20%;
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        left: 0%;
+        bottom: 0%;
+    }
+}
+@-webkit-keyframes page10-left-hand-container-out {
+    0%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        left: 0%;
+        bottom: 0%;
+    }
+    100%{
+        transform: rotate(340deg);
+        -webkit-transform: rotate(340deg);
+        -moz-transform: rotate(340deg);
+        -o-transform: rotate(340deg);
+        -ms-transform: rotate(340deg);
+        left: -110%;
+        bottom: -20%;
+    }
+}
+@-webkit-keyframes page10-background-in-go {
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+@-webkit-keyframes page10-background-out-go {
+    0%{
+        opacity: 1
+    }
+    100%{
+       opacity: 0
+    }
+}
+@-webkit-keyframes page10-patient-in-go {
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+@-webkit-keyframes page10-mouse1-in-go {
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+@-webkit-keyframes page10-dialog-in-go{
+    0%{
+        width: 0
+        height: 0
+        left: 35%
+        top: 25%
+    }
+    100%{
+        width: 30%;
+        height: 11%;
+        left: 5%;
+        top: 14%;      
+    }
+}
+@-webkit-keyframes page10-order-big-in-go {
+    0%{
+        top: 50%
+        left: 50%
+        width: 0%
+        height: 0%
+    }
+    100%{
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+    }
+}

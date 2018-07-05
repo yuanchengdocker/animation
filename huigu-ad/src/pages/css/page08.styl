@@ -1,0 +1,182 @@
+.page8
+    width: 100%
+    height: 100%
+    position: relative
+    .page8-opera-container
+        z-index: 1
+        width: 100%
+        height: 100%
+        top: 100%
+        position: absolute
+        .page8-background8
+            width: 100%
+            height: 100%
+            position: absolute
+        .page8-doctor-container
+            z-index: 2
+            width: 100%
+            height: 100%
+            left: 110%
+            position: absolute
+            .page8-doctor1
+                width: 44%
+                height: 70%
+                bottom: 0
+                right: -6%
+                z-index: 3
+                position: absolute
+            .page8-doctor2
+                width: 37%
+                height: 63%
+                bottom: 0
+                right: 33%
+                position: absolute
+            .page8-opera-table
+                width: 110%
+                height: 35%
+                bottom: 0
+                position: absolute
+        .page8-doctor-container-in
+            left: 10%
+            -webkit-animation:page8-doctor-container-in-go 1s; 
+        .page8-doctor-container-out
+            left: 110%
+            -webkit-animation:page8-doctor-container-out-go 1s; 
+        .page8-expert-container
+            z-index: 3
+            width: 100%
+            height: 100%
+            left: -60%
+            position: absolute
+            .page8-expert
+                z-index: 2;
+                width: 27%
+                left:1%
+                bottom: 0
+                height: 64%
+                position: absolute
+            .page8-hand
+                width: 32%;
+                bottom: 43%;
+                left: 20%;
+                position: absolute
+            .page8-hand-move
+                -webkit-animation:page8-hand-move-go 1s; 
+        .page8-expert-container-in
+            left: 0%
+            -webkit-animation:page8-expert-container-in-go 1s; 
+        .page8-expert-container-out
+            left: -60%
+            -webkit-animation:page8-expert-container-in-go 1s; 
+        .page8-light
+            width: 43%
+            height: 34%
+            top: -34%
+            left: 30%
+            position: absolute
+        .page8-light-in
+            top: 0
+            -webkit-animation:page8-light-in-go 1s;
+        .page8-light-out
+            top: -34%
+            -webkit-animation:page8-light-out-go 1s;
+        .page8-title
+            z-index: 10
+            width: 60%
+            left: 20%
+            bottom: 5%
+            position: absolute
+    .page8-opera-container-in
+        top: 0
+        -webkit-animation:page8-opera-container-in-go 1s; 
+@-webkit-keyframes page8-doctor-container-out-go{
+    0%{
+        left: 10%
+    }
+    100%{
+        left: 110%
+    }
+}
+@-webkit-keyframes page8-doctor-container-in-go{
+    0%{
+        left: 110%
+    }
+    100%{
+        left: 10%
+    }
+}
+@-webkit-keyframes page8-light-in-go{
+    0%{
+        top: -34%
+    }
+    100%{
+        top: 0
+    }
+}
+@-webkit-keyframes page8-light-out-go{
+    0%{
+        top: 0
+    }
+    100%{
+        top: -34%
+    }
+}
+@-webkit-keyframes page8-hand-move-go{
+    0%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+    50%{
+        transform-origin: 0% 40%;
+        -webkit-transform-origin: 0% 40%;
+        -moz-transform-origin: 0% 40%;
+        -o-transform-origin: 0% 40%;
+        -ms-transform-origin: 0% 40%;
+
+        transform: rotate(350deg);
+        -webkit-transform: rotate(350deg);
+        -moz-transform: rotate(350deg);
+        -o-transform: rotate(350deg);
+        -ms-transform: rotate(350deg);
+    }
+    100%{
+        ransform-origin: 0% 40%;
+        -webkit-transform-origin: 0% 40%;
+        -moz-transform-origin: 0% 40%;
+        -o-transform-origin: 0% 40%;
+        -ms-transform-origin: 0% 40%;
+        
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes page8-expert-container-out-go{
+    0%{
+        left: 0%
+    }
+    100%{
+        left: -60%
+    }
+}
+@-webkit-keyframes page8-expert-container-in-go{
+    0%{
+        left: -50%
+    }
+    100%{
+        left: 0%
+    }
+}
+@-webkit-keyframes page8-opera-container-in-go{
+    0%{
+        top: 100%
+    }
+    100%{
+        top: 0
+    }
+}

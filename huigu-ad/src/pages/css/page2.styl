@@ -1,0 +1,111 @@
+.page2
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .page2-background
+        width: 100%
+        height: 100%
+        top: 0;
+        right: 0;
+        position: absolute
+    .page2-desk
+        z-index: 5
+        width: 100%
+        height: 55%
+        bottom: 0
+        position: absolute
+    .page2-doctor1
+        z-index: 6
+        height: 55%
+        width: 60%
+        right: 5%
+        bottom: -2%
+        position: absolute
+    .page2-doctor2
+        z-index: 6
+        height: 55%
+        width: 60%
+        right: 5%
+        bottom: -2%
+        position: absolute
+    .page2-door-close
+        width: 36%
+        height: 50%
+        top: 0;
+        left: 0
+        position: absolute
+    .page2-door-open
+        width: 30%
+        height: 50%
+        top: -10px;
+        left: -2px;
+        position: absolute
+    .page2-hand
+        top: 58%;
+        height: 20%;
+        width: 13%;
+        left: 35%;
+        z-index: 5;
+        position: absolute
+    .page2-msg
+        width: 20%
+        height: 8%
+        left: 38%
+        top: 10%
+        position: absolute
+    .page2-msg2
+        -webkit-animation:msg2-go 1s;
+    .page2-patient2
+        width: 40%;
+        height: 40%;
+        left: 15%;
+        top: 27%;
+        opacity: 0.5
+        position: absolute;
+    .page2-patient2-in
+        width: 56%;
+        height: 80%;
+        left: 2%;
+        top: 20%;
+        opacity: 1
+        -webkit-animation:page2-patient2-in-go 4s;
+    .page2-patient
+        width: 48%
+        height: 48%;
+        left:10%;
+        top: 20%
+        position: absolute;
+    .page2-title
+        width: 84%
+        z-index: 10
+        left: 8%;
+        bottom: 3%
+        position: absolute;
+@-webkit-keyframes msg2-go {
+    0%{
+        width: 0
+        height: 0
+        top: 18%
+    }
+    100%{
+        width: 20%
+        height: 8%
+        top: 10%
+    }
+}
+@-webkit-keyframes page2-patient2-in-go {
+    0%{
+        width: 40%;
+        height: 40%;
+        left: 15%;
+        top: 27%;
+        opacity: 0.5
+    }
+    100%{
+        opacity: 1
+        width: 56%;
+        height: 80%;
+        left: 2%;
+        top: 20%;
+    }
+}

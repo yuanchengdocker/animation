@@ -1,0 +1,210 @@
+.page9
+    width: 100%
+    height: 100%
+    position: relative
+    .page9-service-list-container
+        width: 100%
+        height: 100%
+        position: absolute
+        .page9-circle
+            left: 64%;
+            width: 115%;
+            height: 65%;
+            top: 24%;
+            transform: rotate(220deg);
+            -webkit-transform: rotate(220deg);
+            -moz-transform: rotate(220deg);
+            -o-transform: rotate(220deg);
+            -ms-transform: rotate(220deg);
+            position: absolute
+        .page9-circle-in
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -webkit-animation:page9-circle-in-go 0.5s;
+        .page9-service-item
+            width: 62%
+            height:10%
+            overflow: hidden
+            position: absolute
+            .page9-line
+                width: 20%
+                right: -15%;
+                top: 26%;
+                position: absolute
+            .page9-line-in
+                right: 6%;
+                -webkit-animation:page9-line-in-go 0.5s;
+            .page9-service-icon
+                height: 100%
+                width: 28%
+                right: 10%
+                opacity: 0
+                position: absolute
+            .page9-service-icon-in
+                right: 34%
+                opacity: 1
+                -webkit-animation:page9-service-icon-in-go 0.5s;
+            .page9-service-name
+                width: 0%;
+                left: 15%;
+                top: 50%;
+                position: absolute
+            .page9-service-name-in
+                width: 30%;
+                left: 0;
+                top: 26%;
+                -webkit-animation:page9-service-name-in-go 0.5s;
+        .page9-service-item1
+            top: 24%
+            right: 10%
+            position: absolute
+        .page9-service-item2
+            top: 36%;
+            right: 30%;
+            position: absolute
+        .page9-service-item3
+            top: 51%;
+            right: 37%;
+            position: absolute
+        .page9-service-item4
+            top: 67%;
+            right: 30%;
+            position: absolute
+        .page9-service-item5
+            top: 80%;
+            right: 10%;
+            position: absolute
+    .page9-service-list-container-out
+        right: -100%
+        -webkit-animation:page9-service-list-container-out-go 1s;
+    .page9-service-title
+        z-index: 3
+        width: 30%
+        left: -30%
+        top: -20%
+        position: absolute
+    .page9-service-title-in
+        left: 6%
+        top: 5%
+        -webkit-animation:page9-service-title-in-go 1s;  
+    .page9-service-title-out
+        left: -30%
+        top: -20%
+        -webkit-animation:page9-service-title-out-go 1s;  
+    .page9-title-back
+        z-index: 1
+        width: 50%
+        height: 18%
+        left: -50%
+        top: -18%
+        position: absolute
+    .page9-title-back-in
+        left: 0
+        top: 0
+        -webkit-animation:page9-title-back-in-go 1s;  
+    .page9-title-back-out
+        left: -50%
+        top: -18%
+        -webkit-animation:page9-title-back-out-go 1s; 
+@-webkit-keyframes page9-service-list-container-out-go{
+    0%{
+        right: 0
+    }
+    100%{
+        right: -100%
+    }
+}
+@-webkit-keyframes page9-service-title-out-go{
+    0%{
+        left: 6%
+        top: 5%
+    }
+    100%{
+        left: -30%
+        top: -20%
+    }
+}
+@-webkit-keyframes page9-title-back-out-go{
+    0%{
+        left: 0
+        top: 0
+    }
+    100%{
+        left: -50%
+        top: -18%
+    }
+}
+@-webkit-keyframes page9-service-title-in-go{
+    0%{
+        left: -30%
+        top: -20%
+    }
+    100%{
+        left: 6%
+        top: 5%
+    }
+}
+@-webkit-keyframes page9-title-back-in-go{
+    0%{
+        left: -50%
+        top: -18%
+    }
+    100%{
+        left: 0
+        top: 0
+    }
+}
+@-webkit-keyframes page9-circle-in-go{
+    0%{
+        transform: rotate(220deg);
+        -webkit-transform: rotate(220deg);
+        -moz-transform: rotate(220deg);
+        -o-transform: rotate(220deg);
+        -ms-transform: rotate(220deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes page9-line-in-go{
+    0%{
+        right: -15%
+    }
+    100%{
+        right: 6%
+    }
+}
+@-webkit-keyframes page9-service-icon-in-go{
+    0%{
+        right: 10%
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+        right: 34%
+    }
+}
+@-webkit-keyframes page9-service-name-in-go{
+    0%{
+        width: 0%;
+        left: 15%;
+        top: 50%;
+    }
+    50%{
+        width: 34%;
+        left: 0%;
+        top: 20%;
+    }
+    100%{
+        width: 30%;
+        left: 0;
+        top: 26%;
+    }
+}

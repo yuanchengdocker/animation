@@ -1,0 +1,210 @@
+.page7
+    width: 100%
+    height: 100%
+    position: relative
+    .page7-service-list-container
+        width: 100%
+        height: 100%
+        position: absolute
+        .page7-circle
+            left: -78%;
+            width: 115%;
+            height: 65%;
+            top: 24%;
+            transform: rotate(220deg);
+            -webkit-transform: rotate(220deg);
+            -moz-transform: rotate(220deg);
+            -o-transform: rotate(220deg);
+            -ms-transform: rotate(220deg);
+            position: absolute
+        .page7-circle-in
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -webkit-animation:page7-circle-in-go 0.5s;
+        .page7-service-item
+            width: 62%
+            height:10%
+            overflow: hidden
+            position: absolute
+            .page7-line
+                width: 20%
+                left: -15%;
+                top: 26%;
+                position: absolute
+            .page7-line-in
+                left: 6%;
+                -webkit-animation:page7-line-in-go 0.5s;
+            .page7-service-icon
+                height: 100%
+                width: 28%
+                left: 10%
+                opacity: 0
+                position: absolute
+            .page7-service-icon-in
+                left: 34%
+                opacity: 1
+                -webkit-animation:page7-service-icon-in-go 0.5s;
+            .page7-service-name
+                width: 0%;
+                right: 15%;
+                top: 50%;
+                position: absolute
+            .page7-service-name-in
+                width: 30%;
+                right: 0;
+                top: 26%;
+                -webkit-animation:page7-service-name-in-go 0.5s;
+        .page7-service-item1
+            top: 24%
+            left: 10%
+            position: absolute
+        .page7-service-item2
+            top: 36%;
+            left: 30%;
+            position: absolute
+        .page7-service-item3
+            top: 51%;
+            left: 37%;
+            position: absolute
+        .page7-service-item4
+            top: 67%;
+            left: 30%;
+            position: absolute
+        .page7-service-item5
+            top: 80%;
+            left: 10%;
+            position: absolute
+    .page7-service-list-container-out
+        left: -100%
+        -webkit-animation:page7-service-list-container-out-go 1s;
+    .page7-service-title
+        z-index: 3
+        width: 30%
+        right: -30%
+        top: -20%
+        position: absolute
+    .page7-service-title-in
+        right: 6%
+        top: 5%
+        -webkit-animation:page7-service-title-in-go 1s;  
+    .page7-service-title-out
+        right: -30%
+        top: -20%
+        -webkit-animation:page7-service-title-out-go 1s;  
+    .page7-title-back
+        z-index: 1
+        width: 50%
+        height: 18%
+        right: -50%
+        top: -18%
+        position: absolute
+    .page7-title-back-in
+        right: 0
+        top: 0
+        -webkit-animation:page7-title-back-in-go 1s;  
+    .page7-title-back-out
+        right: -50%
+        top: -18%
+        -webkit-animation:page7-title-back-out-go 1s; 
+@-webkit-keyframes page7-service-list-container-out-go{
+    0%{
+        left: 0
+    }
+    100%{
+        left: -100%
+    }
+}
+@-webkit-keyframes page7-service-title-out-go{
+    0%{
+        right: 6%
+        top: 5%
+    }
+    100%{
+        right: -30%
+        top: -20%
+    }
+}
+@-webkit-keyframes page7-title-back-out-go{
+    0%{
+        right: 0
+        top: 0
+    }
+    100%{
+        right: -50%
+        top: -18%
+    }
+}
+@-webkit-keyframes page7-service-title-in-go{
+    0%{
+        right: -30%
+        top: -20%
+    }
+    100%{
+        right: 6%
+        top: 5%
+    }
+}
+@-webkit-keyframes page7-title-back-in-go{
+    0%{
+        right: -50%
+        top: -18%
+    }
+    100%{
+        right: 0
+        top: 0
+    }
+}
+@-webkit-keyframes page7-circle-in-go{
+    0%{
+        transform: rotate(220deg);
+        -webkit-transform: rotate(220deg);
+        -moz-transform: rotate(220deg);
+        -o-transform: rotate(220deg);
+        -ms-transform: rotate(220deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes page7-line-in-go{
+    0%{
+        left: -15%
+    }
+    100%{
+        left: 6%
+    }
+}
+@-webkit-keyframes page7-service-icon-in-go{
+    0%{
+        left: 10%
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+        left: 34%
+    }
+}
+@-webkit-keyframes page7-service-name-in-go{
+    0%{
+        width: 0%;
+        right: 15%;
+        top: 50%;
+    }
+    50%{
+        width: 34%;
+        right: 0%;
+        top: 20%;
+    }
+    100%{
+        width: 30%;
+        right: 0;
+        top: 26%;
+    }
+}
